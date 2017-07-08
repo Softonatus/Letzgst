@@ -1,0 +1,628 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.login-container {
+    height: 480px;
+}
+
+.force-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.red-btn {
+    background: #e09a9e;
+    border: solid 1px #fff;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.texture {
+    display: inline-block;
+    width: 100%;
+    background: url('../images/texture.png') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    height: 100%;
+}
+
+.bg-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2566+1,dfd1d1+100 */
+    background: #1b2566;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #1b4c9a 1%, #5aeec2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #1b4c9a 1%, #5aeec2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #1b4c9a 1%, #5aeec2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b4c9a ', endColorstr='#5aeec2', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    height: 100vh;
+}
+
+.login-body {
+    position: relative;
+    margin-top: 30px;
+    width: 890px;
+    margin: 0 auto;
+}
+
+.login-body .logo {
+    height: 100px;
+}
+
+.login-container {
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #eaeaea;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+    height: 100px;
+    background: transparent;
+    border-radius: 4px;
+    margin: 30px 0 30px 0;
+}
+
+.signup {
+    margin: 30px 0;
+}
+
+.login-box {
+    height: 540px;
+    width: 320px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    top: -30px;
+    left: 30px;
+    padding: 40px;
+    transition: left .8s cubic-bezier(.175, .885, .26, 1.055);
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.login-details-container {
+    height: 360px;
+    width: 240px;
+}
+
+.login-text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.login-form {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.forgot-password-text {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.highlight-text {
+    cursor: pointer;
+    color: #7266ba;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.login-translate-container {
+    width: 1440px;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.login-steps {
+    float: left;
+    width: 240px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.login-box.right-align .translate-container {
+    -webkit-transform: translateX(-240px);
+    transform: translateX(0px);
+}
+
+.translate-container {
+    width: 480px;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    transition-delay: .4s;
+}
+
+.loginbox-overflow-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.error {
+    border-color: #cd0a0a !important;
+}
+
+label.error {
+    color: red;
+    font-size: 10px;
+    position: absolute;
+}
+
+
+/*---------------custom media-----------*/
+
+@media (min-width: 890px) {
+    .login-box {
+        position: absolute;
+    }
+    .right-align {
+        left: 540px;
+    }
+}
+
+@media (max-width: 890px) {
+    .login-container {
+        display: none;
+    }
+    .login-body {
+        width: auto;
+        max-width: 480px;
+        padding: 0;
+        margin: 30px auto;
+    }
+    .login-box {
+        margin: 0 auto;
+    }
+}
+
+
+/*----------------------dashboard------------------*/
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 220px;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    left: 220px;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: -220px;
+    width: 0;
+    height: 100%;
+    background: #222d32;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 0;
+}
+
+#page-content-wrapper {
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -220px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 44px;
+    border-bottom: solid 1px #41474a;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav li a span {
+    padding: 0px 10px 0px 0px;
+}
+
+.navbar-right li a span {
+    padding: 0px 10px 0px 0px;
+}
+
+.sidebar-nav li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav li a.active {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    background: none;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #wrapper.toggled {
+        padding-left: 220px;
+    }
+    #sidebar-wrapper {
+        width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 220px;
+    }
+    #page-content-wrapper {
+        padding: 0;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: 220px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding: 0;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+}
+
+.sidebar-nav li ul.panel-collapse {
+    list-style: none;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
+    -khtml-padding-start: 0;
+    -o-padding-start: 0;
+    padding-start: 0;
+    padding: 0;
+}
+
+.sidebar-nav li ul.panel-collapse li a {
+    padding-left: 32px;
+}
+
+.letsgst-skin .navbar-inverse {
+    background-color: #3c8dbc;
+    border: 0;
+}
+
+.letsgst-skin .navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.letsgst-skin .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    right: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+.dropdown-menu:after {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    content: '';
+}
+
+.brand-logo {
+    float: left;
+    height: 50px;
+    padding: 4px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.brand-logo img {
+    width: 130px;
+}
+
+.required:after {
+    color: red;
+    content: "*";
+    position: absolute;
+    margin-left: 4px;
+}
+
+.block-head {
+    margin: 50px 0 35px 0;
+}
+
+.block-head span {
+    border-bottom: 3px solid #fcb43f;
+    display: inline-block;
+    width: 50px;
+    clear: both;
+    position: relative;
+    top: 0;
+}
+
+.margin-muted {
+    margin: 0px!important;
+}
+
+#page-content-wrapper h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.address-group {
+    margin-bottom: 21px !important;
+}
+
+
+/*---footer---*/
+
+.main-footer {
+    background: #fff;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+}
+
+
+/*----------icons----*/
+
+.ico-1x {
+    font-size: 20px;
+}
+
+@charset "UTF-8";
+@font-face {
+    font-family: "letzgst";
+    src: url("../fonts/letzgst.eot");
+    src: url("../fonts/letzgst.eot?#iefix") format("embedded-opentype"), url("../fonts/letzgst.woff") format("woff"), url("../fonts/letzgst.ttf") format("truetype"), url("../fonts/letzgst.svg#letzgst") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: "letzgst" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ico-"]:before,
+[class*=" ico-"]:before {
+    font-family: "letzgst" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-approve-invoice:before {
+    content: "\61";
+}
+
+.ico-cloud:before {
+    content: "\62";
+}
+
+.ico-cloud1:before {
+    content: "\63";
+}
+
+.ico-gst:before {
+    content: "\64";
+}
+
+.ico-headphones:before {
+    content: "\65";
+}
+
+.ico-home:before {
+    content: "\66";
+}
+
+.ico-import:before {
+    content: "\67";
+}
+
+.ico-invoice:before {
+    content: "\68";
+}
+
+.ico-mail:before {
+    content: "\69";
+}
+
+.ico-notification:before {
+    content: "\6a";
+}
+
+.ico-pic:before {
+    content: "\6b";
+}
+
+.ico-repeat:before {
+    content: "\6c";
+}
+
+.ico-report:before {
+    content: "\6d";
+}
+
+.ico-reports:before {
+    content: "\6e";
+}
+
+.ico-rupee:before {
+    content: "\6f";
+}
+
+.ico-rupees:before {
+    content: "\70";
+}
+
+.ico-settings:before {
+    content: "\71";
+}
+
+.ico-share:before {
+    content: "\72";
+}
+
+.ico-tax:before {
+    content: "\73";
+}
+
+
+/*---comman classes---*/
+
+.letz-btn {
+    width: 300px;
+}
+
+.p-t5 {
+    padding-top: 5px !important;
+}
+
+.p-t10 {
+    padding-top: 10px !important;
+}
+
+.p-t15 {
+    padding-top: 15px !important;
+}
+
+.p-t20 {
+    padding-top: 20px !important;
+}
+
+.p-r5 {
+    padding-right: 5px;
+}
+
+.p-r10 {
+    padding-right: 10px;
+}
+
+.p-r15 {
+    padding-right: 15px;
+}
+
+.p-r20 {
+    padding-right: 20px;
+}

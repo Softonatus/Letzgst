@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SNService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" />
+      <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISNService_Registration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Registration" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_Registration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePassword" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_SendOtp_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendOtp" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_SendOtp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendOtpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_ValidateOtp_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateOtp" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_ValidateOtp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateOtpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetListUserCACompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListUserCACompany" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetListUserCACompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListUserCACompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetListCACompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCACompany" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetListCACompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListCACompanyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISNService">
+    <wsdl:operation name="Registration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/Registration" message="tns:ISNService_Registration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/RegistrationResponse" message="tns:ISNService_Registration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/Login" message="tns:ISNService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/LoginResponse" message="tns:ISNService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdatePassword" message="tns:ISNService_UpdatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdatePasswordResponse" message="tns:ISNService_UpdatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOtp">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/SendOtp" message="tns:ISNService_SendOtp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/SendOtpResponse" message="tns:ISNService_SendOtp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateOtp">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/ValidateOtp" message="tns:ISNService_ValidateOtp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/ValidateOtpResponse" message="tns:ISNService_ValidateOtp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertProfile" message="tns:ISNService_InsertProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertProfileResponse" message="tns:ISNService_InsertProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateProfile" message="tns:ISNService_UpdateProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateProfileResponse" message="tns:ISNService_UpdateProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetProfile" message="tns:ISNService_GetProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetProfileResponse" message="tns:ISNService_GetProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListUserCACompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetListUserCACompany" message="tns:ISNService_GetListUserCACompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetListUserCACompanyResponse" message="tns:ISNService_GetListUserCACompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListCACompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetListCACompany" message="tns:ISNService_GetListCACompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetListCACompanyResponse" message="tns:ISNService_GetListCACompany_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="SNService" />
+</wsdl:definitions>

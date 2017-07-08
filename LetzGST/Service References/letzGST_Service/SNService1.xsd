@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" />
+  <xs:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" />
+  <xs:element name="Registration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqRegistration" nillable="true" type="q1:ReqRegistration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="RegistrationResult" nillable="true" type="q2:ResRegistration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqLogin" nillable="true" type="q3:ReqLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="LoginResult" nillable="true" type="q4:ResLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqUpdatePassword" nillable="true" type="q5:ReqUpdatePassword" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="UpdatePasswordResult" nillable="true" type="q6:ResCommon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendOtp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqOtp" nillable="true" type="q7:ReqOtp" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendOtpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="SendOtpResult" nillable="true" type="q8:ResOtp" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOtp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqValidateOtp" nillable="true" type="q9:ReqOtpValidate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOtpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="ValidateOtpResult" nillable="true" type="q10:ResCommon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqProfile" nillable="true" type="q11:ReqProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="InsertProfileResult" nillable="true" type="q12:ResCommon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqProfile" nillable="true" type="q13:ReqProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="UpdateProfileResult" nillable="true" type="q14:ResCommon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqUserId" nillable="true" type="q15:ReqUserId" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="GetProfileResult" nillable="true" type="q16:ResProfile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListUserCACompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqListUserCACompany" nillable="true" type="q17:ReqListUserCACompany" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListUserCACompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="GetListUserCACompanyResult" nillable="true" type="q18:ResUserListCACompany" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListCACompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="reqParentId" nillable="true" type="q19:ReqUserId" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListCACompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" minOccurs="0" name="GetListCACompanyResult" nillable="true" type="q20:ResCompanyListCA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

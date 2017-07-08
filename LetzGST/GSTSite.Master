@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GSTSite.master.cs" Inherits="LetzGST.GSTSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>letzGST :: </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />    
+    <link href="../css/master.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap-filestyle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+</head>
+<body class="letsgst-skin">
+    <form id="form1" runat="server">
+    <!--Navbar starts here-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="brand-logo" href="javascript:void(0)"><img src="../images/letzgst-small.png" class="img-responsive"></a>
+                <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="icon ico-mail" aria-hidden="true"></span> Email </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">Email Us : support@letzgst.com</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="icon ico-headphones" aria-hidden="true"></span> Help </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">Call Us : 1234567890</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar ends here-->
+        <div id="wrapper" class="toggled">
+        <div class="container-fluid">
+            <!-- Sidebar starts here-->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <br>
+                    </li>
+                    <li class="sidebar-brand">
+                        <a href="javascript:void(0)" class="navbar-brand">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dashboard.aspx" id="dashboard" class="active"><span class="icon ico-home ico-1x" aria-hidden="true"></span> Home</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon ico-invoice ico-1x" aria-hidden="true"></span> Invoice </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon ico-rupee ico-1x" aria-hidden="true"></span> Expense </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon ico-repeat ico-1x" aria-hidden="true"></span> Reconcile </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon ico-import ico-1x" aria-hidden="true"></span> HSN Code</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon ico-gst ico-1x" aria-hidden="true"></span> GST </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="icon ico-reports ico-1x" aria-hidden="true"></span> Reports </a>
+                    </li>
+                    <li>
+                        <a class="accordion-toggle collapsed toggle-switch" data-toggle="collapse" href="#submenu-2">
+                            <span class="icon ico-settings ico-1x" aria-hidden="true"></span> Settings
+                            <b class="caret"></b>
+                        </a>
+                        <ul id="submenu-2" class="panel-collapse collapse panel-switch" role="menu">
+                            <li><a href="Profile.aspx" id="profile">Profile Settings</a></li>
+                            <li><a href="javascript:void(0)">User &amp; Roles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar ends here -->
+
+            <!-- main Content starts here-->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>                    
+                </div>
+            </div>
+            <!-- main content ends here -->
+
+
+
+        </div>
+
+    </div>
+    </form>
+    
+</body>
+</html>

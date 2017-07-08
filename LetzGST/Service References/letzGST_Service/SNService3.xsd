@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ReqRegistration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpiryDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegisteredDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserRoleAuth" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqRegistration" nillable="true" type="tns:ReqRegistration" />
+  <xs:complexType name="ReqLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqLogin" nillable="true" type="tns:ReqLogin" />
+  <xs:complexType name="ReqUpdatePassword">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqUpdatePassword" nillable="true" type="tns:ReqUpdatePassword" />
+  <xs:complexType name="ReqOtp">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="mobileNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqOtp" nillable="true" type="tns:ReqOtp" />
+  <xs:complexType name="ReqOtpValidate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="otpId" type="xs:int" />
+      <xs:element minOccurs="0" name="otpNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqOtpValidate" nillable="true" type="tns:ReqOtpValidate" />
+  <xs:complexType name="ReqProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GstinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LogoUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MembershipId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PanNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceTaxNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TanNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Vat_TinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WebsiteUrl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqProfile" nillable="true" type="tns:ReqProfile" />
+  <xs:complexType name="ReqUserId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqUserId" nillable="true" type="tns:ReqUserId" />
+  <xs:complexType name="ReqListUserCACompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ParentId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqListUserCACompany" nillable="true" type="tns:ReqListUserCACompany" />
+</xs:schema>
