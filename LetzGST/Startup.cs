@@ -8,5 +8,6 @@ namespace LetzGST
         public void Configuration(IAppBuilder app) {
             ConfigureAuth(app);
         }
+        //adding an unwanted comment
     }
 }
