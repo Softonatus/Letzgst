@@ -1,0 +1,1627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\PublishNew</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>09/02/2017 09:42:18</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/02/2017 09:51:42</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>09/02/2017 09:42:18</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>10/04/2017 16:54:07</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>10/04/2017 16:54:07</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>09/02/2017 09:51:42</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>09/02/2017 09:51:44</publishTime>
+    </File>
+    <File Include="bin/CF.RESTClient.NET.Standard.dll">
+      <publishTime>09/02/2017 09:53:58</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/02/2017 09:52:24</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/02/2017 09:52:10</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>09/06/2017 23:14:54</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>09/06/2017 23:25:40</publishTime>
+    </File>
+    <File Include="bin/LetzGST.dll">
+      <publishTime>10/04/2017 16:41:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>09/02/2017 09:52:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>09/02/2017 09:52:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>09/02/2017 09:52:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>09/02/2017 09:52:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>09/02/2017 09:52:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>09/02/2017 09:52:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>09/02/2017 09:52:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>09/02/2017 09:52:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>09/02/2017 09:52:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>09/02/2017 09:52:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>09/02/2017 09:52:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>09/02/2017 09:53:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/02/2017 09:53:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>09/02/2017 09:53:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>09/02/2017 09:53:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>09/02/2017 09:53:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>09/02/2017 09:53:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>09/02/2017 09:53:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>09/02/2017 09:53:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>09/02/2017 09:53:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>09/02/2017 09:53:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>09/02/2017 09:53:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>09/02/2017 09:52:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>09/02/2017 09:53:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>09/02/2017 09:53:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/02/2017 09:53:52</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>09/02/2017 09:53:56</publishTime>
+    </File>
+    <File Include="bin/pdfcrowd.dll">
+      <publishTime>09/18/2017 00:05:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>09/02/2017 09:53:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>09/02/2017 09:53:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/02/2017 09:53:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/02/2017 09:53:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>09/02/2017 09:53:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>09/02/2017 09:53:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>09/02/2017 09:53:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>09/02/2017 09:53:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>09/02/2017 09:53:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>09/02/2017 09:53:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>09/02/2017 09:53:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>09/02/2017 09:53:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>09/02/2017 09:53:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>09/02/2017 09:52:54</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/02/2017 09:54:02</publishTime>
+    </File>
+    <File Include="BRS/BRS.aspx">
+      <publishTime>10/02/2017 15:07:26</publishTime>
+    </File>
+    <File Include="BRS/brs.js">
+      <publishTime>09/02/2017 09:43:18</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>09/02/2017 09:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>09/02/2017 09:43:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>09/02/2017 09:43:18</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>09/02/2017 09:43:18</publishTime>
+    </File>
+    <File Include="css/animate.css">
+      <publishTime>09/16/2017 19:17:22</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>09/16/2017 19:17:22</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>09/16/2017 19:17:22</publishTime>
+    </File>
+    <File Include="css/count.css">
+      <publishTime>09/02/2017 09:43:20</publishTime>
+    </File>
+    <File Include="css/main.css">
+      <publishTime>09/19/2017 07:29:12</publishTime>
+    </File>
+    <File Include="css/master.css">
+      <publishTime>09/16/2017 19:17:18</publishTime>
+    </File>
+    <File Include="css/pdf.css">
+      <publishTime>09/16/2017 19:23:18</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>09/16/2017 19:17:18</publishTime>
+    </File>
+    <File Include="Dashboard/ChangePassword.aspx">
+      <publishTime>10/02/2017 14:53:04</publishTime>
+    </File>
+    <File Include="Dashboard/CreateClient.aspx">
+      <publishTime>10/02/2017 14:59:41</publishTime>
+    </File>
+    <File Include="Dashboard/CreateUser.aspx">
+      <publishTime>10/02/2017 15:03:49</publishTime>
+    </File>
+    <File Include="Dashboard/Dashboard.aspx">
+      <publishTime>10/04/2017 15:39:28</publishTime>
+    </File>
+    <File Include="Dashboard/dashboard.js">
+      <publishTime>09/02/2017 09:43:22</publishTime>
+    </File>
+    <File Include="Dashboard/Hsnsac.aspx">
+      <publishTime>10/02/2017 15:08:24</publishTime>
+    </File>
+    <File Include="Dashboard/Profile.aspx">
+      <publishTime>10/04/2017 16:40:11</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>09/02/2017 09:42:18</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Bold.eot">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Bold.ttf">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Bold.woff">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Bold.woff2">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Light.eot">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Light.ttf">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Light.woff">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Light.woff2">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Medium.eot">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Medium.ttf">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Medium.woff">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Medium.woff2">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Regular.eot">
+      <publishTime>09/02/2017 09:43:26</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Regular.ttf">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Regular.woff">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Regular.woff2">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Thin.eot">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Thin.ttf">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Thin.woff">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="font/roboto/Roboto-Thin.woff2">
+      <publishTime>09/02/2017 09:43:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/letzgst.eot">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/letzgst.svg">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/letzgst.ttf">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/letzgst.woff">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.woff">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.woff2">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.woff">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.woff2">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.woff">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.woff2">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.woff">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.woff2">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.woff">
+      <publishTime>09/02/2017 09:43:30</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.woff2">
+      <publishTime>09/02/2017 09:43:28</publishTime>
+    </File>
+    <File Include="GST/GSTR-1.aspx">
+      <publishTime>10/04/2017 09:37:58</publishTime>
+    </File>
+    <File Include="GSTSite.Master">
+      <publishTime>10/04/2017 15:49:14</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/CreateCompanySession.ashx">
+      <publishTime>09/02/2017 09:43:36</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/CreateUser.ashx">
+      <publishTime>09/02/2017 09:43:36</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/ExpenseDashboard.ashx">
+      <publishTime>09/02/2017 09:43:36</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/GetClientDetails.ashx">
+      <publishTime>09/02/2017 09:43:36</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/GetUserDetails.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/GetUserHsnMapping.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/HsnSacSearchResults.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/HsnSacUserMapping.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/InvoiceDashboard.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Dashboard/Profile.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/FileUploader.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/GenerateOTP.ashx">
+      <publishTime>09/02/2017 09:43:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Login.ashx">
+      <publishTime>09/02/2017 09:43:32</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/AdvanceDetails.ashx">
+      <publishTime>09/04/2017 00:59:06</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/BillDetails.ashx">
+      <publishTime>09/02/2017 09:43:42</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/BillRefList.ashx">
+      <publishTime>09/03/2017 00:19:46</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/CreditNoteDetails.ashx">
+      <publishTime>09/03/2017 18:52:00</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/DebitNoteDetails.ashx">
+      <publishTime>09/03/2017 01:57:00</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/expenseDetails.ashx">
+      <publishTime>09/02/2017 09:43:42</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetBRSList.ashx">
+      <publishTime>09/02/2017 09:43:42</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetBrsPayment.ashx">
+      <publishTime>09/02/2017 09:43:40</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetLastBillId.ashx">
+      <publishTime>09/02/2017 09:43:40</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetLastInsertedAdvance.ashx">
+      <publishTime>09/03/2017 23:55:52</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetLastInsertedCreditNoteId.ashx">
+      <publishTime>09/03/2017 16:40:18</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetLastInsertedDebitNoteId.ashx">
+      <publishTime>09/02/2017 23:35:34</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/getLastInvId.ashx">
+      <publishTime>09/02/2017 09:43:40</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetLastPO.ashx">
+      <publishTime>09/02/2017 09:43:40</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/getLastQuotationId.ashx">
+      <publishTime>09/02/2017 09:43:40</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/GetTDSDetails.ashx">
+      <publishTime>09/02/2017 09:43:40</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/InsertBrsPayment.ashx">
+      <publishTime>09/02/2017 09:43:38</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/InsertVendor.ashx">
+      <publishTime>09/02/2017 09:43:38</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/Invoicedetails.ashx">
+      <publishTime>09/02/2017 09:43:38</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/ItemDetails.ashx">
+      <publishTime>09/02/2017 09:43:38</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/manageCustomers.ashx">
+      <publishTime>09/02/2017 15:23:10</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/PaymentTerms.ashx">
+      <publishTime>09/02/2017 09:43:38</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/PDF_Upload_Download.ashx">
+      <publishTime>09/21/2017 08:54:28</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/PODetails.ashx">
+      <publishTime>09/02/2017 09:43:38</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/Quotationdetails.ashx">
+      <publishTime>09/02/2017 09:43:36</publishTime>
+    </File>
+    <File Include="HandlerFiles/Manage/SendEmail.ashx">
+      <publishTime>09/26/2017 00:08:44</publishTime>
+    </File>
+    <File Include="HandlerFiles/OTPValidation.ashx">
+      <publishTime>09/02/2017 09:43:32</publishTime>
+    </File>
+    <File Include="HandlerFiles/Registration.ashx">
+      <publishTime>09/02/2017 09:43:32</publishTime>
+    </File>
+    <File Include="HandlerFiles/ResetPassword.ashx">
+      <publishTime>09/02/2017 09:43:32</publishTime>
+    </File>
+    <File Include="HandlerFiles/UploadLogo.ashx">
+      <publishTime>10/01/2017 23:57:05</publishTime>
+    </File>
+    <File Include="HandlerFiles/ValidateOTP.ashx">
+      <publishTime>09/02/2017 09:43:32</publishTime>
+    </File>
+    <File Include="images/add.svg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/chosen-sprite.png">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/Launching.jpg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/letzgst-small.png">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/letzgst.png">
+      <publishTime>09/08/2017 00:29:24</publishTime>
+    </File>
+    <File Include="images/letzgst.svg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/pic.svg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/remove.svg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/Ripple.svg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/softonauts.svg">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="images/Spinner-small.gif">
+      <publishTime>09/02/2017 09:43:42</publishTime>
+    </File>
+    <File Include="images/texture.png">
+      <publishTime>09/02/2017 09:43:42</publishTime>
+    </File>
+    <File Include="img/lightbox/default-skin.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/lightbox/default-skin.svg">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/lightbox/preloader.gif">
+      <publishTime>09/02/2017 09:43:44</publishTime>
+    </File>
+    <File Include="img/overlays/01.png">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="img/overlays/02.png">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="img/overlays/03.png">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="img/overlays/04.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/overlays/05.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/overlays/06.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/overlays/07.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/overlays/08.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/overlays/09.png">
+      <publishTime>09/02/2017 09:43:46</publishTime>
+    </File>
+    <File Include="img/svg/arrow_left.svg">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="img/svg/arrow_right.svg">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>09/10/2017 23:58:38</publishTime>
+    </File>
+    <File Include="js/advance.js">
+      <publishTime>10/02/2017 20:56:03</publishTime>
+    </File>
+    <File Include="js/bootstrap-filestyle.min.js">
+      <publishTime>09/02/2017 09:43:54</publishTime>
+    </File>
+    <File Include="js/bootstrap-notify.min.js">
+      <publishTime>09/02/2017 09:43:54</publishTime>
+    </File>
+    <File Include="js/bootstrap-wysihtml5.js">
+      <publishTime>09/02/2017 09:43:54</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>09/02/2017 09:43:54</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>09/02/2017 09:43:54</publishTime>
+    </File>
+    <File Include="js/changePassword.js">
+      <publishTime>09/02/2017 09:43:52</publishTime>
+    </File>
+    <File Include="js/charts.js">
+      <publishTime>09/02/2017 09:43:52</publishTime>
+    </File>
+    <File Include="js/chosen.jquery.js">
+      <publishTime>09/02/2017 09:43:52</publishTime>
+    </File>
+    <File Include="js/chosen.proto.min.js">
+      <publishTime>09/02/2017 09:43:52</publishTime>
+    </File>
+    <File Include="js/clientRoles.js">
+      <publishTime>09/02/2017 09:43:52</publishTime>
+    </File>
+    <File Include="js/common.js">
+      <publishTime>10/04/2017 16:11:02</publishTime>
+    </File>
+    <File Include="js/creditnote.js">
+      <publishTime>10/02/2017 21:24:25</publishTime>
+    </File>
+    <File Include="js/custom.js">
+      <publishTime>09/18/2017 08:40:16</publishTime>
+    </File>
+    <File Include="js/dashboard.js">
+      <publishTime>09/18/2017 01:49:22</publishTime>
+    </File>
+    <File Include="js/debitnote.js">
+      <publishTime>10/02/2017 21:24:43</publishTime>
+    </File>
+    <File Include="js/expenses.js">
+      <publishTime>10/02/2017 23:28:40</publishTime>
+    </File>
+    <File Include="js/gstr1.js">
+      <publishTime>09/18/2017 01:12:08</publishTime>
+    </File>
+    <File Include="js/hsnsac.js">
+      <publishTime>09/02/2017 09:43:50</publishTime>
+    </File>
+    <File Include="js/invoice.js">
+      <publishTime>10/02/2017 21:24:08</publishTime>
+    </File>
+    <File Include="js/jquery-3.1.1.js">
+      <publishTime>09/02/2017 09:43:50</publishTime>
+    </File>
+    <File Include="js/jquery-3.1.1.min.js">
+      <publishTime>09/02/2017 09:43:50</publishTime>
+    </File>
+    <File Include="js/jquery.responsiveTabs.min.js">
+      <publishTime>09/02/2017 09:43:50</publishTime>
+    </File>
+    <File Include="js/jquery.toast.js">
+      <publishTime>09/10/2017 22:27:20</publishTime>
+    </File>
+    <File Include="js/jsrender.js">
+      <publishTime>09/02/2017 09:43:50</publishTime>
+    </File>
+    <File Include="js/pobills.js">
+      <publishTime>09/25/2017 09:09:50</publishTime>
+    </File>
+    <File Include="js/profile.js">
+      <publishTime>10/02/2017 17:44:02</publishTime>
+    </File>
+    <File Include="js/quotation.js">
+      <publishTime>10/04/2017 14:44:38</publishTime>
+    </File>
+    <File Include="js/recurring.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="js/reports.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="js/responsive-tabs.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="js/sweetalert.min.js">
+      <publishTime>09/18/2017 08:58:14</publishTime>
+    </File>
+    <File Include="js/tether.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="js/tether.min.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="js/userRoles.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="js/wysihtml5-0.3.0.min.js">
+      <publishTime>09/02/2017 09:43:48</publishTime>
+    </File>
+    <File Include="Manage/Advance.aspx">
+      <publishTime>10/02/2017 20:31:37</publishTime>
+    </File>
+    <File Include="Manage/Bills.aspx">
+      <publishTime>10/02/2017 15:15:22</publishTime>
+    </File>
+    <File Include="Manage/CreditNote.aspx">
+      <publishTime>10/02/2017 20:29:12</publishTime>
+    </File>
+    <File Include="Manage/DebitNote.aspx">
+      <publishTime>10/02/2017 15:25:03</publishTime>
+    </File>
+    <File Include="Manage/Expenses.aspx">
+      <publishTime>09/02/2017 09:43:56</publishTime>
+    </File>
+    <File Include="Manage/Invoice.aspx">
+      <publishTime>10/02/2017 20:30:00</publishTime>
+    </File>
+    <File Include="Manage/PurchaseOrder.aspx">
+      <publishTime>10/02/2017 20:30:30</publishTime>
+    </File>
+    <File Include="Manage/Quotation.aspx">
+      <publishTime>10/04/2017 11:59:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/02/2017 09:42:16</publishTime>
+    </File>
+    <File Include="plugins/datatables/dataTables.bootstrap.css">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/dataTables.bootstrap.js">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/dataTables.bootstrap.min.js">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/columns.html">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/complete-callback.html">
+      <publishTime>09/02/2017 09:50:28</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/fill-both.html">
+      <publishTime>09/02/2017 09:50:28</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html">
+      <publishTime>09/02/2017 09:50:28</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/index.html">
+      <publishTime>09/02/2017 09:50:28</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/scrolling.html">
+      <publishTime>09/02/2017 09:50:28</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/simple.html">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/examples/step-callback.html">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/images/filler.png">
+      <publishTime>09/02/2017 09:50:28</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/AutoFill/Readme.txt">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/alt_insert.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/colvis.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/col_filter.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/fixedheader.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/index.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/jqueryui.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/new_init.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/predefined.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/realtime.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/reset.html">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/scrolling.html">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/server_side.html">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/simple.html">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/examples/state_save.html">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/images/insert.png">
+      <publishTime>09/02/2017 09:50:32</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/License.txt">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColReorder/Readme.md">
+      <publishTime>09/02/2017 09:50:30</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/css/dataTables.colVis.css">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/button_order.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/exclude_columns.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/group_columns.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/index.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/jqueryui.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/mouseover.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/new_init.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/restore.html">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/simple.html">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/text.html">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/title_callback.html">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/two_tables.html">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/examples/two_tables_identical.html">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/js/dataTables.colVis.js">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/License.txt">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/ColVis/Readme.md">
+      <publishTime>09/02/2017 09:50:34</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/bootstrap.html">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/colvis.html">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/col_filter.html">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/css_size.html">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/index.html">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/index_column.html">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/right_column.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/rowspan.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/simple.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/size_fixed.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/size_fluid.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/examples/two_columns.html">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/License.txt">
+      <publishTime>09/02/2017 09:50:38</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedColumns/Readme.md">
+      <publishTime>09/02/2017 09:50:36</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/examples/header_footer.html">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/examples/index.html">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/examples/simple.html">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/examples/top_left_right.html">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/examples/two_tables.html">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/examples/zIndexes.html">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js">
+      <publishTime>09/02/2017 09:50:42</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/FixedHeader/Readme.txt">
+      <publishTime>09/02/2017 09:50:40</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/examples/events.html">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/examples/html.html">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/examples/index.html">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/examples/scrolling.html">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/examples/simple.html">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/KeyTable/Readme.txt">
+      <publishTime>09/02/2017 09:50:44</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/css/dataTables.responsive.css">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/css/dataTables.responsive.scss">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/child-rows/index.html">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/display-control/auto.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/display-control/classes.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/display-control/index.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html">
+      <publishTime>09/02/2017 09:50:48</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/index.html">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/initialisation/className.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/initialisation/default.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/initialisation/index.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/initialisation/new.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/initialisation/option.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/styling/compact.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/styling/foundation.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/styling/index.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/examples/styling/scrolling.html">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/js/dataTables.responsive.js">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js">
+      <publishTime>09/02/2017 09:50:50</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/License.txt">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Responsive/Readme.md">
+      <publishTime>09/02/2017 09:50:46</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/css/dataTables.scroller.css">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/api_scrolling.html">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/data/2500.txt">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/data/ssp.php">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/index.html">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/large_js_source.html">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/server-side_processing.html">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/simple.html">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/examples/state_saving.html">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/images/loading-background.png">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/js/dataTables.scroller.js">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/Scroller/Readme.txt">
+      <publishTime>09/02/2017 09:50:52</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/ajax.html">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/alter_buttons.html">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/bootstrap.html">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/button_text.html">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/collection.html">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/defaults.html">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/index.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/jqueryui.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/multiple_tables.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/multi_instance.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/new_init.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/pdf_message.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/plug-in.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/select_column.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/select_multi.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/select_os.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/select_single.html">
+      <publishTime>09/02/2017 09:50:56</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/simple.html">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/examples/swf_path.html">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/collection.png">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/collection_hover.png">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/copy.png">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/copy_hover.png">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/csv.png">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/csv_hover.png">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/pdf.png">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/pdf_hover.png">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/print.png">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/print_hover.png">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/psd/collection.psd">
+      <publishTime>09/02/2017 09:51:02</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/psd/copy document.psd">
+      <publishTime>09/02/2017 09:51:02</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/psd/file_types.psd">
+      <publishTime>09/02/2017 09:51:02</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/psd/printer.psd">
+      <publishTime>09/02/2017 09:51:00</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/xls.png">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/images/xls_hover.png">
+      <publishTime>09/02/2017 09:50:58</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js">
+      <publishTime>09/02/2017 09:51:02</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js">
+      <publishTime>09/02/2017 09:51:02</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/Readme.md">
+      <publishTime>09/02/2017 09:50:54</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf">
+      <publishTime>09/02/2017 09:51:04</publishTime>
+    </File>
+    <File Include="plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf">
+      <publishTime>09/02/2017 09:51:02</publishTime>
+    </File>
+    <File Include="plugins/datatables/images/sort_asc.png">
+      <publishTime>09/02/2017 09:51:04</publishTime>
+    </File>
+    <File Include="plugins/datatables/images/sort_asc_disabled.png">
+      <publishTime>09/02/2017 09:51:04</publishTime>
+    </File>
+    <File Include="plugins/datatables/images/sort_both.png">
+      <publishTime>09/02/2017 09:51:04</publishTime>
+    </File>
+    <File Include="plugins/datatables/images/sort_desc.png">
+      <publishTime>09/02/2017 09:51:04</publishTime>
+    </File>
+    <File Include="plugins/datatables/images/sort_desc_disabled.png">
+      <publishTime>09/02/2017 09:51:04</publishTime>
+    </File>
+    <File Include="plugins/datatables/jquery.dataTables.css">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/jquery.dataTables.js">
+      <publishTime>09/02/2017 09:50:26</publishTime>
+    </File>
+    <File Include="plugins/datatables/jquery.dataTables.min.css">
+      <publishTime>09/02/2017 09:50:24</publishTime>
+    </File>
+    <File Include="plugins/datatables/jquery.dataTables.min.js">
+      <publishTime>09/02/2017 09:50:24</publishTime>
+    </File>
+    <File Include="plugins/datatables/jquery.dataTables_themeroller.css">
+      <publishTime>09/02/2017 09:50:24</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>10/04/2017 16:54:02</publishTime>
+    </File>
+    <File Include="Reports/GetReports.ashx">
+      <publishTime>09/02/2017 09:51:16</publishTime>
+    </File>
+    <File Include="Reports/Reports.aspx">
+      <publishTime>10/02/2017 15:28:49</publishTime>
+    </File>
+    <File Include="sass/mdb.scss">
+      <publishTime>09/02/2017 09:51:16</publishTime>
+    </File>
+    <File Include="sass/mdb/free/data/_colors.scss">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="sass/mdb/free/data/_mixins.scss">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="sass/mdb/free/data/_prefixer.scss">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="sass/mdb/free/data/_variables-b4.scss">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="sass/mdb/free/data/_variables.scss">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_animations.scss">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_buttons.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_cards-basic.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_carousels-basic.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_footer.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_forms-basic.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_global.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_helpers.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_hover-effects.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_modals.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_navbars.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_roboto.scss">
+      <publishTime>09/02/2017 09:51:18</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_typography.scss">
+      <publishTime>09/02/2017 09:51:16</publishTime>
+    </File>
+    <File Include="sass/mdb/free/_waves.scss">
+      <publishTime>09/02/2017 09:51:16</publishTime>
+    </File>
+    <File Include="sass/README.txt">
+      <publishTime>09/02/2017 09:51:16</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>09/02/2017 09:51:22</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>09/02/2017 09:51:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>09/02/2017 09:51:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>09/02/2017 09:51:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>09/02/2017 09:51:22</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>09/02/2017 09:51:20</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>09/02/2017 09:51:26</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>09/02/2017 09:51:24</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>09/18/2017 08:58:15</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.Gst1Save.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ReqBill.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ReqBillPayment.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ReqBrsPaymentList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ReqPurchaseList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResAdvanceGetList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResAllUserList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResBillCount.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResBillList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResBillPayment.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResBrsList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResCommon.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResCompanyListCA1.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResCreditNoteGetList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResCustomerDetail.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResCustomerList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResDashBoard.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResDebitNoteGetList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResEstimateGetList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResGetExpenseList.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResGetPaymentTermList.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResGst1List.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResId.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResInvoiceGetList.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResLastInsertedCount.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResListHsnCodeGoods.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResLogin.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResOtp.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResPoCount.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResProfile1.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResPurchase_PurchaseItem.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResrefIdList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResRegistration.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResReportsList.datasource">
+      <publishTime>09/29/2017 01:04:02</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResTdsList.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResUserHsnHscCode.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResUserItemsList.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResUserListCACompany1.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResVendorDetail.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="Service References/letzGST_Service/LetzGST.letzGST_Service.ResVendorList.datasource">
+      <publishTime>09/29/2017 01:04:01</publishTime>
+    </File>
+    <File Include="TestPDF.aspx">
+      <publishTime>09/06/2017 23:20:43</publishTime>
+    </File>
+    <File Include="testpdf.html">
+      <publishTime>09/15/2017 01:55:34</publishTime>
+    </File>
+    <File Include="uploads/34/Logo/Contract2.png">
+      <publishTime>09/02/2017 09:51:38</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/Config.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/Contract3.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/div.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/Error.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/InitialTest_Phase1.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/Issue.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/35/Logo/test.png">
+      <publishTime>09/02/2017 09:51:38</publishTime>
+    </File>
+    <File Include="uploads/45/Logo/Config.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="uploads/74/Logo/div.png">
+      <publishTime>09/09/2017 00:08:24</publishTime>
+    </File>
+    <File Include="uploads/86/Logo/InitialTest_Phase1.png">
+      <publishTime>09/02/2017 09:51:40</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>09/02/2017 09:42:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/24/2017 01:27:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

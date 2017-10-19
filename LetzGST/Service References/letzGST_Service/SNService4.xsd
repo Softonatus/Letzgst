@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse.GST1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse.GST1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" />
+  <xs:complexType name="ResGst1List">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" base="q1:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="No._x0020_Of_x0020_Invoices" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="No._x0020_of_x0020_Recepients" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Total_x0020_Cess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Total_x0020_Invoice_x0020_Value" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Total_x0020_Taxable_x0020_Value" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="resGst1" nillable="true" type="tns:ArrayOfResGst1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResGst1List" nillable="true" type="tns:ResGst1List" />
+  <xs:complexType name="ArrayOfResGst1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResGst1" nillable="true" type="tns:ResGst1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResGst1" nillable="true" type="tns:ArrayOfResGst1" />
+  <xs:complexType name="ResGst1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="E-Commerce_x0020_GSTIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GSTIN_x002F_UIN_x0020_of_x0020_Recipient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Invoice_x0020_Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Invoice_x0020_Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Invoice_x0020_Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Invoice_x0020_date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Place_x0020_Of_x0020_Supply" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reverse_x0020_Charge" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Taxable_x0020_Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResGst1" nillable="true" type="tns:ResGst1" />
+  <xs:complexType name="Gst1Save">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="at" nillable="true" type="tns:ArrayOfAt" />
+      <xs:element minOccurs="0" name="b2b" nillable="true" type="tns:ArrayOfB2b" />
+      <xs:element minOccurs="0" name="b2cl" nillable="true" type="tns:ArrayOfB2cl" />
+      <xs:element minOccurs="0" name="b2cs" nillable="true" type="tns:ArrayOfB2cs" />
+      <xs:element minOccurs="0" name="cdnr" nillable="true" type="tns:ArrayOfCdnr" />
+      <xs:element minOccurs="0" name="cdnur" nillable="true" type="tns:ArrayOfCdnur" />
+      <xs:element minOccurs="0" name="cur_gt" type="xs:double" />
+      <xs:element minOccurs="0" name="doc_issue" nillable="true" type="tns:DocIssue" />
+      <xs:element minOccurs="0" name="exp" nillable="true" type="tns:ArrayOfExp" />
+      <xs:element minOccurs="0" name="fp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gstin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gt" type="xs:double" />
+      <xs:element minOccurs="0" name="hash" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hsn" nillable="true" type="tns:Hsn" />
+      <xs:element minOccurs="0" name="mode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nil" nillable="true" type="tns:Nil" />
+      <xs:element minOccurs="0" name="txpd" nillable="true" type="tns:ArrayOfTxpd" />
+      <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Gst1Save" nillable="true" type="tns:Gst1Save" />
+  <xs:complexType name="ArrayOfAt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="At" nillable="true" type="tns:At" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAt" nillable="true" type="tns:ArrayOfAt" />
+  <xs:complexType name="At">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm6" />
+      <xs:element minOccurs="0" name="pos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sply_ty" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="At" nillable="true" type="tns:At" />
+  <xs:complexType name="ArrayOfItm6">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm6" nillable="true" type="tns:Itm6" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm6" nillable="true" type="tns:ArrayOfItm6" />
+  <xs:complexType name="Itm6">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ad_amt" type="xs:int" />
+      <xs:element minOccurs="0" name="csamt" type="xs:int" />
+      <xs:element minOccurs="0" name="iamt" type="xs:int" />
+      <xs:element minOccurs="0" name="rt" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm6" nillable="true" type="tns:Itm6" />
+  <xs:complexType name="ArrayOfB2b">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="B2b" nillable="true" type="tns:B2b" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfB2b" nillable="true" type="tns:ArrayOfB2b" />
+  <xs:complexType name="B2b">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ctin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inv" nillable="true" type="tns:ArrayOfInv" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="B2b" nillable="true" type="tns:B2b" />
+  <xs:complexType name="ArrayOfInv">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Inv" nillable="true" type="tns:Inv" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInv" nillable="true" type="tns:ArrayOfInv" />
+  <xs:complexType name="Inv">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="etin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inv_typ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm" />
+      <xs:element minOccurs="0" name="pos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rchrg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="val" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inv" nillable="true" type="tns:Inv" />
+  <xs:complexType name="ArrayOfItm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm" nillable="true" type="tns:Itm" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm" nillable="true" type="tns:ArrayOfItm" />
+  <xs:complexType name="Itm">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itm_det" nillable="true" type="tns:ItmDet" />
+      <xs:element minOccurs="0" name="num" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm" nillable="true" type="tns:Itm" />
+  <xs:complexType name="ItmDet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="csamt" type="xs:decimal" />
+      <xs:element minOccurs="0" name="iamt" type="xs:decimal" />
+      <xs:element minOccurs="0" name="rt" type="xs:decimal" />
+      <xs:element minOccurs="0" name="txval" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItmDet" nillable="true" type="tns:ItmDet" />
+  <xs:complexType name="ArrayOfB2cl">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="B2cl" nillable="true" type="tns:B2cl" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfB2cl" nillable="true" type="tns:ArrayOfB2cl" />
+  <xs:complexType name="B2cl">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="inv" nillable="true" type="tns:ArrayOfInv2" />
+      <xs:element minOccurs="0" name="pos" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="B2cl" nillable="true" type="tns:B2cl" />
+  <xs:complexType name="ArrayOfInv2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Inv2" nillable="true" type="tns:Inv2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInv2" nillable="true" type="tns:ArrayOfInv2" />
+  <xs:complexType name="Inv2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="etin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm2" />
+      <xs:element minOccurs="0" name="val" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inv2" nillable="true" type="tns:Inv2" />
+  <xs:complexType name="ArrayOfItm2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm2" nillable="true" type="tns:Itm2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm2" nillable="true" type="tns:ArrayOfItm2" />
+  <xs:complexType name="Itm2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itm_det" nillable="true" type="tns:ItmDet2" />
+      <xs:element minOccurs="0" name="num" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm2" nillable="true" type="tns:Itm2" />
+  <xs:complexType name="ItmDet2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="csamt" type="xs:int" />
+      <xs:element minOccurs="0" name="iamt" type="xs:double" />
+      <xs:element minOccurs="0" name="rt" type="xs:int" />
+      <xs:element minOccurs="0" name="txval" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItmDet2" nillable="true" type="tns:ItmDet2" />
+  <xs:complexType name="ArrayOfB2cs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="B2cs" nillable="true" type="tns:B2cs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfB2cs" nillable="true" type="tns:ArrayOfB2cs" />
+  <xs:complexType name="B2cs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="csamt" type="xs:int" />
+      <xs:element minOccurs="0" name="etin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iamt" type="xs:int" />
+      <xs:element minOccurs="0" name="pos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rt" type="xs:int" />
+      <xs:element minOccurs="0" name="sply_ty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="txval" type="xs:int" />
+      <xs:element minOccurs="0" name="typ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="B2cs" nillable="true" type="tns:B2cs" />
+  <xs:complexType name="ArrayOfCdnr">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cdnr" nillable="true" type="tns:Cdnr" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCdnr" nillable="true" type="tns:ArrayOfCdnr" />
+  <xs:complexType name="Cdnr">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ctin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nt" nillable="true" type="tns:ArrayOfNt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cdnr" nillable="true" type="tns:Cdnr" />
+  <xs:complexType name="ArrayOfNt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Nt" nillable="true" type="tns:Nt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNt" nillable="true" type="tns:ArrayOfNt" />
+  <xs:complexType name="Nt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm3" />
+      <xs:element minOccurs="0" name="nt_dt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nt_num" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ntty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="p_gst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rsn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="val" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Nt" nillable="true" type="tns:Nt" />
+  <xs:complexType name="ArrayOfItm3">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm3" nillable="true" type="tns:Itm3" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm3" nillable="true" type="tns:ArrayOfItm3" />
+  <xs:complexType name="Itm3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itm_det" nillable="true" type="tns:ItmDet3" />
+      <xs:element minOccurs="0" name="num" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm3" nillable="true" type="tns:Itm3" />
+  <xs:complexType name="ItmDet3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="csamt" type="xs:double" />
+      <xs:element minOccurs="0" name="iamt" type="xs:double" />
+      <xs:element minOccurs="0" name="rt" type="xs:double" />
+      <xs:element minOccurs="0" name="txval" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItmDet3" nillable="true" type="tns:ItmDet3" />
+  <xs:complexType name="ArrayOfCdnur">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cdnur" nillable="true" type="tns:Cdnur" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCdnur" nillable="true" type="tns:ArrayOfCdnur" />
+  <xs:complexType name="Cdnur">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm7" />
+      <xs:element minOccurs="0" name="nt_dt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nt_num" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ntty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="p_gst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rsn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="typ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="val" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cdnur" nillable="true" type="tns:Cdnur" />
+  <xs:complexType name="ArrayOfItm7">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm7" nillable="true" type="tns:Itm7" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm7" nillable="true" type="tns:ArrayOfItm7" />
+  <xs:complexType name="Itm7">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itm_det" nillable="true" type="tns:ItmDet4" />
+      <xs:element minOccurs="0" name="num" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm7" nillable="true" type="tns:Itm7" />
+  <xs:complexType name="ItmDet4">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="csamt" type="xs:double" />
+      <xs:element minOccurs="0" name="iamt" type="xs:double" />
+      <xs:element minOccurs="0" name="rt" type="xs:double" />
+      <xs:element minOccurs="0" name="txval" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItmDet4" nillable="true" type="tns:ItmDet4" />
+  <xs:complexType name="DocIssue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doc_det" nillable="true" type="tns:ArrayOfDocDet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocIssue" nillable="true" type="tns:DocIssue" />
+  <xs:complexType name="ArrayOfDocDet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocDet" nillable="true" type="tns:DocDet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocDet" nillable="true" type="tns:ArrayOfDocDet" />
+  <xs:complexType name="DocDet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="doc_num" type="xs:int" />
+      <xs:element minOccurs="0" name="docs" nillable="true" type="tns:ArrayOfDoc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocDet" nillable="true" type="tns:DocDet" />
+  <xs:complexType name="ArrayOfDoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Doc" nillable="true" type="tns:Doc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDoc" nillable="true" type="tns:ArrayOfDoc" />
+  <xs:complexType name="Doc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cancel" type="xs:int" />
+      <xs:element minOccurs="0" name="from" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="net_issue" type="xs:int" />
+      <xs:element minOccurs="0" name="num" type="xs:int" />
+      <xs:element minOccurs="0" name="to" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="totnum" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Doc" nillable="true" type="tns:Doc" />
+  <xs:complexType name="ArrayOfExp">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Exp" nillable="true" type="tns:Exp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExp" nillable="true" type="tns:ArrayOfExp" />
+  <xs:complexType name="Exp">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="exp_typ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inv" nillable="true" type="tns:ArrayOfInv3" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Exp" nillable="true" type="tns:Exp" />
+  <xs:complexType name="ArrayOfInv3">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Inv3" nillable="true" type="tns:Inv3" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInv3" nillable="true" type="tns:ArrayOfInv3" />
+  <xs:complexType name="Inv3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm4" />
+      <xs:element minOccurs="0" name="sbdt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sbnum" type="xs:int" />
+      <xs:element minOccurs="0" name="sbpcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="val" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inv3" nillable="true" type="tns:Inv3" />
+  <xs:complexType name="ArrayOfItm4">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm4" nillable="true" type="tns:Itm4" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm4" nillable="true" type="tns:ArrayOfItm4" />
+  <xs:complexType name="Itm4">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iamt" type="xs:double" />
+      <xs:element minOccurs="0" name="rt" type="xs:int" />
+      <xs:element minOccurs="0" name="txval" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm4" nillable="true" type="tns:Itm4" />
+  <xs:complexType name="Hsn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" nillable="true" type="tns:ArrayOfDatum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Hsn" nillable="true" type="tns:Hsn" />
+  <xs:complexType name="ArrayOfDatum">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Datum" nillable="true" type="tns:Datum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDatum" nillable="true" type="tns:ArrayOfDatum" />
+  <xs:complexType name="Datum">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="csamt" type="xs:int" />
+      <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hsn_sc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iamt" type="xs:double" />
+      <xs:element minOccurs="0" name="num" type="xs:int" />
+      <xs:element minOccurs="0" name="qty" type="xs:double" />
+      <xs:element minOccurs="0" name="txval" type="xs:double" />
+      <xs:element minOccurs="0" name="uqc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="val" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Datum" nillable="true" type="tns:Datum" />
+  <xs:complexType name="Nil">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="inv" nillable="true" type="tns:ArrayOfInv4" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Nil" nillable="true" type="tns:Nil" />
+  <xs:complexType name="ArrayOfInv4">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Inv4" nillable="true" type="tns:Inv4" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInv4" nillable="true" type="tns:ArrayOfInv4" />
+  <xs:complexType name="Inv4">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="expt_amt" type="xs:double" />
+      <xs:element minOccurs="0" name="ngsup_amt" type="xs:double" />
+      <xs:element minOccurs="0" name="nil_amt" type="xs:double" />
+      <xs:element minOccurs="0" name="sply_ty" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Inv4" nillable="true" type="tns:Inv4" />
+  <xs:complexType name="ArrayOfTxpd">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Txpd" nillable="true" type="tns:Txpd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTxpd" nillable="true" type="tns:ArrayOfTxpd" />
+  <xs:complexType name="Txpd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itms" nillable="true" type="tns:ArrayOfItm5" />
+      <xs:element minOccurs="0" name="pos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sply_ty" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Txpd" nillable="true" type="tns:Txpd" />
+  <xs:complexType name="ArrayOfItm5">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Itm5" nillable="true" type="tns:Itm5" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItm5" nillable="true" type="tns:ArrayOfItm5" />
+  <xs:complexType name="Itm5">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ad_amt" type="xs:int" />
+      <xs:element minOccurs="0" name="csamt" type="xs:int" />
+      <xs:element minOccurs="0" name="iamt" type="xs:int" />
+      <xs:element minOccurs="0" name="rt" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Itm5" nillable="true" type="tns:Itm5" />
+</xs:schema>

@@ -6,8 +6,94 @@
       <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" />
       <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" />
+      <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest.GST1" />
+      <xsd:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse.GST1" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="ISNService_UpdateCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateBrsPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBrsPayment" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateBrsPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBrsPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDebitDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebitDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDebitDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebitDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedDebit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDebit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateLogo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLogo" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateLogo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLogoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_SendMailCustom_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailCustom" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_SendMailCustom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailCustomResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetB2BGst1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetB2BGst1" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetB2BGst1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetB2BGst1Response" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetB2CLGst1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetB2CLGst1" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetB2CLGst1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetB2CLGst1Response" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetB2CSGst1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetB2CSGst1" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetB2CSGst1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetB2CSGst1Response" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetGstr1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGstr1" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetGstr1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGstr1Response" />
+  </wsdl:message>
   <wsdl:message name="ISNService_Registration_InputMessage">
     <wsdl:part name="parameters" element="tns:Registration" />
   </wsdl:message>
@@ -68,7 +154,513 @@
   <wsdl:message name="ISNService_GetListCACompany_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetListCACompanyResponse" />
   </wsdl:message>
+  <wsdl:message name="ISNService_InsertUserHSNCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserHSNCode" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertUserHSNCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserHSNCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_HsnDetailSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:HsnDetailSearch" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_HsnDetailSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HsnDetailSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UserHsnDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserHsnDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UserHsnDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserHsnDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteUserHsn_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserHsn" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteUserHsn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserHsnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserHsnHscCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserHsnHscCode" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserHsnHscCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserHsnHscCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertVendor_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertVendor" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertVendor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateVendor_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVendor" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateVendor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteVendor_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVendor" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteVendor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetVendorList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendorList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetVendorList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetVendorDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendorDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetVendorDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVendorDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCustomerDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCustomerDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertExpense_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExpense" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertExpense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExpenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetExpense_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExpense" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetExpense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExpenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertPurchase_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPurchase" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertPurchase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPurchaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedPoId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedPoId" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedPoId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedPoIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdatePurchase_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePurchase" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdatePurchase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePurchaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetPurchaseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetPurchaseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetPurchaseDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetPurchaseDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPurchaseDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertPurchase_InputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertPurchase" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertPurchase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertPurchaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetAllUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUser" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetAllUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBill" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBillPaymentDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillPaymentDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBillPaymentDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillPaymentDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateBillPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBillPayment" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateBillPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBillPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBill" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertBill" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertRecurringBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertRecurringBill" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertRecurringBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertRecurringBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedBillNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedBillNo" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedBillNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedBillNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserBillList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserBillList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserBillList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserBillListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserFutureBillList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFutureBillList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserFutureBillList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFutureBillListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBill" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBillDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBillDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserItemList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserItemList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetUserItemList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserItemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertUserItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserItem" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertUserItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetTdsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTdsList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetTdsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTdsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertVendor_InputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertVendor" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_BulkInsertVendor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BulkInsertVendorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetPaymentTerm_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentTerm" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetPaymentTerm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaymentTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertPaymentTerm_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPaymentTerm" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertPaymentTerm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPaymentTermResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDashBoardContentInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardContentInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDashBoardContentInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardContentInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDashBoardContentExpense_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardContentExpense" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetDashBoardContentExpense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashBoardContentExpenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedAdvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedAdvance" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedAdvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedAdvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedCredit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeletePurchase_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePurchase" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeletePurchase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePurchaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertAdvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdvance" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertAdvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCredit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateAdvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAdvance" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateAdvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAdvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCredit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteAdvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAdvance" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteAdvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAdvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCredit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetAdvance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdvance" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetAdvance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdvanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCredit" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetAdvanceDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdvanceDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetAdvanceDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdvanceDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCreditDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCreditDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetInvoiceDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetInvoiceDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBrsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrsList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBrsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertBrsPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBrsPayment" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertBrsPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBrsPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBrsPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrsPayment" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBrsPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrsPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetInvoiceRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceRef" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetInvoiceRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBillRef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillRef" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetBillRef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillRefResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetReportList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetReportList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedEstimate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedEstimate" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetLastInsertedEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastInsertedEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertEstimate_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEstimate" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateEstimate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEstimate" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_UpdateEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteEstimate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEstimate" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetEstimate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEstimate" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetEstimateDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEstimateDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetEstimateDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEstimateDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_InsertCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_DeleteCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="ISNService_GetCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
   <wsdl:portType name="ISNService">
+    <wsdl:operation name="UpdateCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateCustomer" message="tns:ISNService_UpdateCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateCustomerResponse" message="tns:ISNService_UpdateCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBrsPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateBrsPayment" message="tns:ISNService_UpdateBrsPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateBrsPaymentResponse" message="tns:ISNService_UpdateBrsPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateDebit" message="tns:ISNService_UpdateDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateDebitResponse" message="tns:ISNService_UpdateDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteDebit" message="tns:ISNService_DeleteDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteDebitResponse" message="tns:ISNService_DeleteDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetDebit" message="tns:ISNService_GetDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetDebitResponse" message="tns:ISNService_GetDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetDebitDetail" message="tns:ISNService_GetDebitDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetDebitDetailResponse" message="tns:ISNService_GetDebitDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedDebit" message="tns:ISNService_GetLastInsertedDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedDebitResponse" message="tns:ISNService_GetLastInsertedDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertDebit" message="tns:ISNService_InsertDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertDebitResponse" message="tns:ISNService_InsertDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLogo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateLogo" message="tns:ISNService_UpdateLogo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateLogoResponse" message="tns:ISNService_UpdateLogo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailCustom">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/SendMailCustom" message="tns:ISNService_SendMailCustom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/SendMailCustomResponse" message="tns:ISNService_SendMailCustom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetB2BGst1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetB2BGst1" message="tns:ISNService_GetB2BGst1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetB2BGst1Response" message="tns:ISNService_GetB2BGst1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetB2CLGst1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetB2CLGst1" message="tns:ISNService_GetB2CLGst1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetB2CLGst1Response" message="tns:ISNService_GetB2CLGst1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetB2CSGst1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetB2CSGst1" message="tns:ISNService_GetB2CSGst1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetB2CSGst1Response" message="tns:ISNService_GetB2CSGst1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGstr1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetGstr1" message="tns:ISNService_GetGstr1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetGstr1Response" message="tns:ISNService_GetGstr1_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="Registration">
       <wsdl:input wsaw:Action="http://tempuri.org/ISNService/Registration" message="tns:ISNService_Registration_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ISNService/RegistrationResponse" message="tns:ISNService_Registration_OutputMessage" />
@@ -108,6 +700,306 @@
     <wsdl:operation name="GetListCACompany">
       <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetListCACompany" message="tns:ISNService_GetListCACompany_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetListCACompanyResponse" message="tns:ISNService_GetListCACompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserHSNCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertUserHSNCode" message="tns:ISNService_InsertUserHSNCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertUserHSNCodeResponse" message="tns:ISNService_InsertUserHSNCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HsnDetailSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/HsnDetailSearch" message="tns:ISNService_HsnDetailSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/HsnDetailSearchResponse" message="tns:ISNService_HsnDetailSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserHsnDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UserHsnDetail" message="tns:ISNService_UserHsnDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UserHsnDetailResponse" message="tns:ISNService_UserHsnDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserHsn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteUserHsn" message="tns:ISNService_DeleteUserHsn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteUserHsnResponse" message="tns:ISNService_DeleteUserHsn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteUser" message="tns:ISNService_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteUserResponse" message="tns:ISNService_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateUser" message="tns:ISNService_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateUserResponse" message="tns:ISNService_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserHsnHscCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetUserHsnHscCode" message="tns:ISNService_GetUserHsnHscCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetUserHsnHscCodeResponse" message="tns:ISNService_GetUserHsnHscCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertVendor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertVendor" message="tns:ISNService_InsertVendor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertVendorResponse" message="tns:ISNService_InsertVendor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVendor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateVendor" message="tns:ISNService_UpdateVendor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateVendorResponse" message="tns:ISNService_UpdateVendor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVendor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteVendor" message="tns:ISNService_DeleteVendor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteVendorResponse" message="tns:ISNService_DeleteVendor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetVendorList" message="tns:ISNService_GetVendorList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetVendorListResponse" message="tns:ISNService_GetVendorList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetVendorDetail" message="tns:ISNService_GetVendorDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetVendorDetailResponse" message="tns:ISNService_GetVendorDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetCustomerDetail" message="tns:ISNService_GetCustomerDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetCustomerDetailResponse" message="tns:ISNService_GetCustomerDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExpense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertExpense" message="tns:ISNService_InsertExpense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertExpenseResponse" message="tns:ISNService_InsertExpense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetExpense" message="tns:ISNService_GetExpense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetExpenseResponse" message="tns:ISNService_GetExpense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPurchase">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertPurchase" message="tns:ISNService_InsertPurchase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertPurchaseResponse" message="tns:ISNService_InsertPurchase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedPoId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedPoId" message="tns:ISNService_GetLastInsertedPoId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedPoIdResponse" message="tns:ISNService_GetLastInsertedPoId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePurchase">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdatePurchase" message="tns:ISNService_UpdatePurchase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdatePurchaseResponse" message="tns:ISNService_UpdatePurchase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetPurchaseList" message="tns:ISNService_GetPurchaseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetPurchaseListResponse" message="tns:ISNService_GetPurchaseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetPurchaseDetail" message="tns:ISNService_GetPurchaseDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetPurchaseDetailResponse" message="tns:ISNService_GetPurchaseDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkInsertPurchase">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/BulkInsertPurchase" message="tns:ISNService_BulkInsertPurchase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/BulkInsertPurchaseResponse" message="tns:ISNService_BulkInsertPurchase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetAllUser" message="tns:ISNService_GetAllUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetAllUserResponse" message="tns:ISNService_GetAllUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteBill" message="tns:ISNService_DeleteBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteBillResponse" message="tns:ISNService_DeleteBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillPaymentDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetBillPaymentDetail" message="tns:ISNService_GetBillPaymentDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetBillPaymentDetailResponse" message="tns:ISNService_GetBillPaymentDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBillPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateBillPayment" message="tns:ISNService_UpdateBillPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateBillPaymentResponse" message="tns:ISNService_UpdateBillPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertBill" message="tns:ISNService_InsertBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertBillResponse" message="tns:ISNService_InsertBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkInsertBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/BulkInsertBill" message="tns:ISNService_BulkInsertBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/BulkInsertBillResponse" message="tns:ISNService_BulkInsertBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkInsertRecurringBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/BulkInsertRecurringBill" message="tns:ISNService_BulkInsertRecurringBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/BulkInsertRecurringBillResponse" message="tns:ISNService_BulkInsertRecurringBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedBillNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedBillNo" message="tns:ISNService_GetLastInsertedBillNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedBillNoResponse" message="tns:ISNService_GetLastInsertedBillNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserBillList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetUserBillList" message="tns:ISNService_GetUserBillList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetUserBillListResponse" message="tns:ISNService_GetUserBillList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFutureBillList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetUserFutureBillList" message="tns:ISNService_GetUserFutureBillList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetUserFutureBillListResponse" message="tns:ISNService_GetUserFutureBillList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateBill" message="tns:ISNService_UpdateBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateBillResponse" message="tns:ISNService_UpdateBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetBillDetail" message="tns:ISNService_GetBillDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetBillDetailResponse" message="tns:ISNService_GetBillDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserItemList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetUserItemList" message="tns:ISNService_GetUserItemList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetUserItemListResponse" message="tns:ISNService_GetUserItemList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertUserItem" message="tns:ISNService_InsertUserItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertUserItemResponse" message="tns:ISNService_InsertUserItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTdsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetTdsList" message="tns:ISNService_GetTdsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetTdsListResponse" message="tns:ISNService_GetTdsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkInsertVendor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/BulkInsertVendor" message="tns:ISNService_BulkInsertVendor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/BulkInsertVendorResponse" message="tns:ISNService_BulkInsertVendor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentTerm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetPaymentTerm" message="tns:ISNService_GetPaymentTerm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetPaymentTermResponse" message="tns:ISNService_GetPaymentTerm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPaymentTerm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertPaymentTerm" message="tns:ISNService_InsertPaymentTerm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertPaymentTermResponse" message="tns:ISNService_InsertPaymentTerm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashBoardContentInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetDashBoardContentInvoice" message="tns:ISNService_GetDashBoardContentInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetDashBoardContentInvoiceResponse" message="tns:ISNService_GetDashBoardContentInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashBoardContentExpense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetDashBoardContentExpense" message="tns:ISNService_GetDashBoardContentExpense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetDashBoardContentExpenseResponse" message="tns:ISNService_GetDashBoardContentExpense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedAdvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedAdvance" message="tns:ISNService_GetLastInsertedAdvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedAdvanceResponse" message="tns:ISNService_GetLastInsertedAdvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedCredit" message="tns:ISNService_GetLastInsertedCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedCreditResponse" message="tns:ISNService_GetLastInsertedCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedInvoice" message="tns:ISNService_GetLastInsertedInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedInvoiceResponse" message="tns:ISNService_GetLastInsertedInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePurchase">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeletePurchase" message="tns:ISNService_DeletePurchase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeletePurchaseResponse" message="tns:ISNService_DeletePurchase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertAdvance" message="tns:ISNService_InsertAdvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertAdvanceResponse" message="tns:ISNService_InsertAdvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertCredit" message="tns:ISNService_InsertCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertCreditResponse" message="tns:ISNService_InsertCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertInvoice" message="tns:ISNService_InsertInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertInvoiceResponse" message="tns:ISNService_InsertInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateAdvance" message="tns:ISNService_UpdateAdvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateAdvanceResponse" message="tns:ISNService_UpdateAdvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateCredit" message="tns:ISNService_UpdateCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateCreditResponse" message="tns:ISNService_UpdateCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateInvoice" message="tns:ISNService_UpdateInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateInvoiceResponse" message="tns:ISNService_UpdateInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAdvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteAdvance" message="tns:ISNService_DeleteAdvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteAdvanceResponse" message="tns:ISNService_DeleteAdvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteCredit" message="tns:ISNService_DeleteCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteCreditResponse" message="tns:ISNService_DeleteCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteInvoice" message="tns:ISNService_DeleteInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteInvoiceResponse" message="tns:ISNService_DeleteInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetAdvance" message="tns:ISNService_GetAdvance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetAdvanceResponse" message="tns:ISNService_GetAdvance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetCredit" message="tns:ISNService_GetCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetCreditResponse" message="tns:ISNService_GetCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetInvoice" message="tns:ISNService_GetInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetInvoiceResponse" message="tns:ISNService_GetInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvanceDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetAdvanceDetail" message="tns:ISNService_GetAdvanceDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetAdvanceDetailResponse" message="tns:ISNService_GetAdvanceDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetCreditDetail" message="tns:ISNService_GetCreditDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetCreditDetailResponse" message="tns:ISNService_GetCreditDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetInvoiceDetail" message="tns:ISNService_GetInvoiceDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetInvoiceDetailResponse" message="tns:ISNService_GetInvoiceDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBrsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetBrsList" message="tns:ISNService_GetBrsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetBrsListResponse" message="tns:ISNService_GetBrsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBrsPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertBrsPayment" message="tns:ISNService_InsertBrsPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertBrsPaymentResponse" message="tns:ISNService_InsertBrsPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBrsPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetBrsPayment" message="tns:ISNService_GetBrsPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetBrsPaymentResponse" message="tns:ISNService_GetBrsPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceRef">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetInvoiceRef" message="tns:ISNService_GetInvoiceRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetInvoiceRefResponse" message="tns:ISNService_GetInvoiceRef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBillRef">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetBillRef" message="tns:ISNService_GetBillRef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetBillRefResponse" message="tns:ISNService_GetBillRef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetReportList" message="tns:ISNService_GetReportList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetReportListResponse" message="tns:ISNService_GetReportList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastInsertedEstimate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedEstimate" message="tns:ISNService_GetLastInsertedEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetLastInsertedEstimateResponse" message="tns:ISNService_GetLastInsertedEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEstimate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertEstimate" message="tns:ISNService_InsertEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertEstimateResponse" message="tns:ISNService_InsertEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEstimate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/UpdateEstimate" message="tns:ISNService_UpdateEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/UpdateEstimateResponse" message="tns:ISNService_UpdateEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEstimate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteEstimate" message="tns:ISNService_DeleteEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteEstimateResponse" message="tns:ISNService_DeleteEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstimate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetEstimate" message="tns:ISNService_GetEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetEstimateResponse" message="tns:ISNService_GetEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEstimateDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetEstimateDetail" message="tns:ISNService_GetEstimateDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetEstimateDetailResponse" message="tns:ISNService_GetEstimateDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/InsertCustomer" message="tns:ISNService_InsertCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/InsertCustomerResponse" message="tns:ISNService_InsertCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/DeleteCustomer" message="tns:ISNService_DeleteCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/DeleteCustomerResponse" message="tns:ISNService_DeleteCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISNService/GetCustomerList" message="tns:ISNService_GetCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISNService/GetCustomerListResponse" message="tns:ISNService_GetCustomerList_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:service name="SNService" />

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:complexType name="ResRegistration">
+  <xs:import schemaLocation="http://letzgst.com/SNService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" />
+  <xs:complexType name="ResId">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:ResCommon">
         <xs:sequence>
-          <xs:element minOccurs="0" name="ParentId" type="xs:int" />
-          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="ResRegistration" nillable="true" type="tns:ResRegistration" />
+  <xs:element name="ResId" nillable="true" type="tns:ResId" />
   <xs:complexType name="ResCommon">
     <xs:sequence>
       <xs:element minOccurs="0" name="ResponseCode" nillable="true" type="xs:int" />
@@ -18,14 +18,121 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ResCommon" nillable="true" type="tns:ResCommon" />
-  <xs:complexType name="ResLogin">
+  <xs:complexType name="ResDebitNoteGetList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="resDebitNoteGet" nillable="true" type="tns:ArrayOfResDebitNoteGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResDebitNoteGetList" nillable="true" type="tns:ResDebitNoteGetList" />
+  <xs:complexType name="ArrayOfResDebitNoteGet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResDebitNoteGet" nillable="true" type="tns:ResDebitNoteGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResDebitNoteGet" nillable="true" type="tns:ArrayOfResDebitNoteGet" />
+  <xs:complexType name="ResDebitNoteGet">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Advance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AttachmentUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DebitDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DebitId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DebitNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Discount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Frieght" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InsuranceAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoicePaymentDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceRefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsTaxInclusive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LabourCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentTerm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Prefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReasonOfIssuingDocument" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResDebitItemList" nillable="true" type="tns:ArrayOfResDebitItem" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermCondition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="VendorId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResDebitNoteGet" nillable="true" type="tns:ResDebitNoteGet" />
+  <xs:complexType name="ArrayOfResDebitItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResDebitItem" nillable="true" type="tns:ResDebitItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResDebitItem" nillable="true" type="tns:ArrayOfResDebitItem" />
+  <xs:complexType name="ResDebitItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DebitId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DebitNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Igst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Utgst" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResDebitItem" nillable="true" type="tns:ResDebitItem" />
+  <xs:complexType name="ResLastInsertedCount">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Count" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResLastInsertedCount" nillable="true" type="tns:ResLastInsertedCount" />
+  <xs:complexType name="ResRegistration">
     <xs:complexContent mixed="false">
       <xs:extension base="tns:ResCommon">
         <xs:sequence>
           <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResRegistration" nillable="true" type="tns:ResRegistration" />
+  <xs:complexType name="ResLogin">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AuthKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpiryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LogoUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UserRoleAuth" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="authId" nillable="true" type="xs:int" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -35,8 +142,8 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:ResCommon">
         <xs:sequence>
-          <xs:element minOccurs="0" name="OtpId" type="xs:int" />
-          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="OtpId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -46,12 +153,14 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:ResCommon">
         <xs:sequence>
+          <xs:element minOccurs="0" name="AadharNo" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="CinNo" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="GstinNo" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="LogoUrl" nillable="true" type="xs:string" />
@@ -72,9 +181,13 @@
   </xs:complexType>
   <xs:element name="ResProfile" nillable="true" type="tns:ResProfile" />
   <xs:complexType name="ResUserListCACompany">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="resUserCACompany" nillable="true" type="tns:ArrayOfResUserCACompany" />
-    </xs:sequence>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resUserCACompany" nillable="true" type="tns:ArrayOfResUserCACompany" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="ResUserListCACompany" nillable="true" type="tns:ResUserListCACompany" />
   <xs:complexType name="ArrayOfResUserCACompany">
@@ -87,14 +200,19 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ResUserCACompany" nillable="true" type="tns:ResUserCACompany" />
   <xs:complexType name="ResCompanyListCA">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="resCompany_CA" nillable="true" type="tns:ArrayOfResCompany_CA" />
-    </xs:sequence>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resCompany_CA" nillable="true" type="tns:ArrayOfResCompany_CA" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="ResCompanyListCA" nillable="true" type="tns:ResCompanyListCA" />
   <xs:complexType name="ArrayOfResCompany_CA">
@@ -105,10 +223,821 @@
   <xs:element name="ArrayOfResCompany_CA" nillable="true" type="tns:ArrayOfResCompany_CA" />
   <xs:complexType name="ResCompany_CA">
     <xs:sequence>
+      <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ResCompany_CA" nillable="true" type="tns:ResCompany_CA" />
+  <xs:complexType name="ResListHsnCodeGoods">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resHsnCodeGoods" nillable="true" type="tns:ArrayOfResHsnCodeGoods" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResListHsnCodeGoods" nillable="true" type="tns:ResListHsnCodeGoods" />
+  <xs:complexType name="ArrayOfResHsnCodeGoods">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResHsnCodeGoods" nillable="true" type="tns:ResHsnCodeGoods" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResHsnCodeGoods" nillable="true" type="tns:ArrayOfResHsnCodeGoods" />
+  <xs:complexType name="ResHsnCodeGoods">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HsnCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HsnCodeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HsnDetail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HsnRate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResHsnCodeGoods" nillable="true" type="tns:ResHsnCodeGoods" />
+  <xs:complexType name="ResUserHsnHscCode">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="reqUserHscList" nillable="true" type="tns:ArrayOfResHsnCodeGoods" />
+          <xs:element minOccurs="0" name="reqUserHsnList" nillable="true" type="tns:ArrayOfResHsnCodeGoods" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResUserHsnHscCode" nillable="true" type="tns:ResUserHsnHscCode" />
+  <xs:complexType name="ResVendorList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resVendor" nillable="true" type="tns:ArrayOfResVendor" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResVendorList" nillable="true" type="tns:ResVendorList" />
+  <xs:complexType name="ArrayOfResVendor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResVendor" nillable="true" type="tns:ResVendor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResVendor" nillable="true" type="tns:ArrayOfResVendor" />
+  <xs:complexType name="ResVendor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingPinCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResVendor" nillable="true" type="tns:ResVendor" />
+  <xs:complexType name="ResVendorDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountHolderName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GstinNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IfscCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCompositionVendor" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsReverseCharge" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PanCardNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrimaryContactPerson" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceTaxNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TinVat" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResVendorDetail" nillable="true" type="tns:ResVendorDetail" />
+  <xs:complexType name="ResCustomerDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BillingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BillingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BillingCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BillingCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BillingPinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BillingState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GstinNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PanNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrimaryContact" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceTaxNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sez" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingPinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShowTdsInvoice" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TdsRate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TdsSection" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TinVatNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResCustomerDetail" nillable="true" type="tns:ResCustomerDetail" />
+  <xs:complexType name="ResGetExpenseList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resExpenseList" nillable="true" type="tns:ArrayOfResGetExpense" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResGetExpenseList" nillable="true" type="tns:ResGetExpenseList" />
+  <xs:complexType name="ArrayOfResGetExpense">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResGetExpense" nillable="true" type="tns:ResGetExpense" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResGetExpense" nillable="true" type="tns:ArrayOfResGetExpense" />
+  <xs:complexType name="ResGetExpense">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExpenseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResGetExpense" nillable="true" type="tns:ResGetExpense" />
+  <xs:complexType name="ResPoCount">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PoIdCount" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResPoCount" nillable="true" type="tns:ResPoCount" />
+  <xs:complexType name="ResPurchase_PurchaseItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="resPurchase" nillable="true" type="q1:ReqPurchase" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="resPurchaseItemList" nillable="true" type="q2:ArrayOfReqPurchaseItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResPurchase_PurchaseItem" nillable="true" type="tns:ResPurchase_PurchaseItem" />
+  <xs:complexType name="ResPurchase_PurchaseItemList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="resPurchaseItemList" nillable="true" type="q3:ArrayOfReqPurchaseItem" />
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SoftonautsService.CRequest" minOccurs="0" name="resPurchaseList" nillable="true" type="q4:ArrayOfReqPurchase" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResPurchase_PurchaseItemList" nillable="true" type="tns:ResPurchase_PurchaseItemList" />
+  <xs:complexType name="ResAllUserList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="resAllUserList" nillable="true" type="tns:ArrayOfResAllUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResAllUserList" nillable="true" type="tns:ResAllUserList" />
+  <xs:complexType name="ArrayOfResAllUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResAllUser" nillable="true" type="tns:ResAllUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResAllUser" nillable="true" type="tns:ArrayOfResAllUser" />
+  <xs:complexType name="ResAllUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResAllUser" nillable="true" type="tns:ResAllUser" />
+  <xs:complexType name="ResBillPayment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BillId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Memo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentMode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResBillPayment" nillable="true" type="tns:ResBillPayment" />
+  <xs:complexType name="ResBillCount">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BillNoCount" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResBillCount" nillable="true" type="tns:ResBillCount" />
+  <xs:complexType name="ResUserItemsList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resUserItemsList" nillable="true" type="tns:ArrayOfResUserItems" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResUserItemsList" nillable="true" type="tns:ResUserItemsList" />
+  <xs:complexType name="ArrayOfResUserItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResUserItems" nillable="true" type="tns:ResUserItems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResUserItems" nillable="true" type="tns:ArrayOfResUserItems" />
+  <xs:complexType name="ResUserItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HsnCodeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitOfMeasures" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResUserItems" nillable="true" type="tns:ResUserItems" />
+  <xs:complexType name="ResTdsList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resTdsList" nillable="true" type="tns:ArrayOfResTds" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResTdsList" nillable="true" type="tns:ResTdsList" />
+  <xs:complexType name="ArrayOfResTds">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResTds" nillable="true" type="tns:ResTds" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResTds" nillable="true" type="tns:ArrayOfResTds" />
+  <xs:complexType name="ResTds">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TdsDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TdsRate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TdsSection" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResTds" nillable="true" type="tns:ResTds" />
+  <xs:complexType name="ResGetPaymentTermList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resGetPaymentTermList" nillable="true" type="tns:ArrayOfResGetPaymentTerm" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResGetPaymentTermList" nillable="true" type="tns:ResGetPaymentTermList" />
+  <xs:complexType name="ArrayOfResGetPaymentTerm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResGetPaymentTerm" nillable="true" type="tns:ResGetPaymentTerm" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResGetPaymentTerm" nillable="true" type="tns:ArrayOfResGetPaymentTerm" />
+  <xs:complexType name="ResGetPaymentTerm">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Term" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResGetPaymentTerm" nillable="true" type="tns:ResGetPaymentTerm" />
+  <xs:complexType name="ResDashBoard">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="billCgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="billIgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="billSgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="billTotalTax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="billUtgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="invoiceCgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="invoiceIgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="invoiceSgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="invoiceTotalTax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="invoiceUtgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusExpenseList" nillable="true" type="tns:ArrayOfExpenseStatus" />
+      <xs:element minOccurs="0" name="statusInvoiceList" nillable="true" type="tns:ArrayOfInvoiceStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResDashBoard" nillable="true" type="tns:ResDashBoard" />
+  <xs:complexType name="ArrayOfExpenseStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseStatus" nillable="true" type="tns:ExpenseStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseStatus" nillable="true" type="tns:ArrayOfExpenseStatus" />
+  <xs:complexType name="ExpenseStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusCount" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExpenseStatus" nillable="true" type="tns:ExpenseStatus" />
+  <xs:complexType name="ArrayOfInvoiceStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceStatus" nillable="true" type="tns:InvoiceStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoiceStatus" nillable="true" type="tns:ArrayOfInvoiceStatus" />
+  <xs:complexType name="InvoiceStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusCount" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceStatus" nillable="true" type="tns:InvoiceStatus" />
+  <xs:complexType name="ResAdvanceGetList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="resAdvanceGetList" nillable="true" type="tns:ArrayOfResAdvanceGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResAdvanceGetList" nillable="true" type="tns:ResAdvanceGetList" />
+  <xs:complexType name="ArrayOfResAdvanceGet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResAdvanceGet" nillable="true" type="tns:ResAdvanceGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResAdvanceGet" nillable="true" type="tns:ArrayOfResAdvanceGet" />
+  <xs:complexType name="ResAdvanceGet">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdvanceDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AdvanceId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="AdvanceNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="AttachmentUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Frieght" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InsuranceAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoicePaymentDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceRefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsTaxInclusive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LabourCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentTerm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Prefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResAdvanceItemList" nillable="true" type="tns:ArrayOfResAdvanceItem" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermCondition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResAdvanceGet" nillable="true" type="tns:ResAdvanceGet" />
+  <xs:complexType name="ArrayOfResAdvanceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResAdvanceItem" nillable="true" type="tns:ResAdvanceItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResAdvanceItem" nillable="true" type="tns:ArrayOfResAdvanceItem" />
+  <xs:complexType name="ResAdvanceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdvanceId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AdvanceNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Igst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Utgst" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResAdvanceItem" nillable="true" type="tns:ResAdvanceItem" />
+  <xs:complexType name="ResCreditNoteGetList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="resCreditGetList" nillable="true" type="tns:ArrayOfResCreditNoteGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResCreditNoteGetList" nillable="true" type="tns:ResCreditNoteGetList" />
+  <xs:complexType name="ArrayOfResCreditNoteGet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResCreditNoteGet" nillable="true" type="tns:ResCreditNoteGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResCreditNoteGet" nillable="true" type="tns:ArrayOfResCreditNoteGet" />
+  <xs:complexType name="ResCreditNoteGet">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Advance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AttachmentUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreditDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreditId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CreditNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Discount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Frieght" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InsuranceAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoicePaymentDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceRefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsTaxInclusive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LabourCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Prefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReasonOfIssuingDocument" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResCreditItemList" nillable="true" type="tns:ArrayOfResCreditItem" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermCondition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResCreditNoteGet" nillable="true" type="tns:ResCreditNoteGet" />
+  <xs:complexType name="ArrayOfResCreditItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResCreditItem" nillable="true" type="tns:ResCreditItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResCreditItem" nillable="true" type="tns:ArrayOfResCreditItem" />
+  <xs:complexType name="ResCreditItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreditId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CreditNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Igst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Utgst" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResCreditItem" nillable="true" type="tns:ResCreditItem" />
+  <xs:complexType name="ResInvoiceGetList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resInvoiceGetList" nillable="true" type="tns:ArrayOfResInvoiceGet" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResInvoiceGetList" nillable="true" type="tns:ResInvoiceGetList" />
+  <xs:complexType name="ArrayOfResInvoiceGet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResInvoiceGet" nillable="true" type="tns:ResInvoiceGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResInvoiceGet" nillable="true" type="tns:ArrayOfResInvoiceGet" />
+  <xs:complexType name="ResInvoiceGet">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Advance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AttachmentUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Discount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Frequency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Frieght" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InsuranceAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceDetailPayment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="InvoiceType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsReverseCharge" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsTaxInclusive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LabourCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentTerm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlaceOfSupply" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PortCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Prefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResInvoiceItemList" nillable="true" type="tns:ArrayOfResInvoiceItem" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingBillNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SupplyDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermsCondition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransactionCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransportMode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type_E_OE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="VehicleNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResInvoiceGet" nillable="true" type="tns:ResInvoiceGet" />
+  <xs:complexType name="ArrayOfResInvoiceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResInvoiceItem" nillable="true" type="tns:ResInvoiceItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResInvoiceItem" nillable="true" type="tns:ArrayOfResInvoiceItem" />
+  <xs:complexType name="ResInvoiceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Igst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Utgst" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResInvoiceItem" nillable="true" type="tns:ResInvoiceItem" />
+  <xs:complexType name="ResBrsList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resBrsList" nillable="true" type="tns:ArrayOfResBrs" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResBrsList" nillable="true" type="tns:ResBrsList" />
+  <xs:complexType name="ArrayOfResBrs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResBrs" nillable="true" type="tns:ResBrs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResBrs" nillable="true" type="tns:ArrayOfResBrs" />
+  <xs:complexType name="ResBrs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PendingAmount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResBrs" nillable="true" type="tns:ResBrs" />
+  <xs:complexType name="ResrefIdList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resrefIdList" nillable="true" type="tns:ArrayOfResrefId" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResrefIdList" nillable="true" type="tns:ResrefIdList" />
+  <xs:complexType name="ArrayOfResrefId">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResrefId" nillable="true" type="tns:ResrefId" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResrefId" nillable="true" type="tns:ArrayOfResrefId" />
+  <xs:complexType name="ResrefId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RefId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResrefId" nillable="true" type="tns:ResrefId" />
+  <xs:complexType name="ResReportsList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resReportsList" nillable="true" type="tns:ArrayOfResReports" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResReportsList" nillable="true" type="tns:ResReportsList" />
+  <xs:complexType name="ArrayOfResReports">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResReports" nillable="true" type="tns:ResReports" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResReports" nillable="true" type="tns:ArrayOfResReports" />
+  <xs:complexType name="ResReports">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GstinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Igst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PanNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Utgst" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResReports" nillable="true" type="tns:ResReports" />
+  <xs:complexType name="ResEstimateGetList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resEstimateGetList" nillable="true" type="tns:ArrayOfResEstimateGet" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResEstimateGetList" nillable="true" type="tns:ResEstimateGetList" />
+  <xs:complexType name="ArrayOfResEstimateGet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResEstimateGet" nillable="true" type="tns:ResEstimateGet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResEstimateGet" nillable="true" type="tns:ArrayOfResEstimateGet" />
+  <xs:complexType name="ResEstimateGet">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AttachmentUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Discount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EstimateDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EstimateId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="EstimateNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ExpiryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Frieght" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InsuranceAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceDetailPayment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsReverseCharge" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsTaxInclusive" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LabourCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherCharge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentTerm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlaceOfSupply" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PortCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Prefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResEstimateItemList" nillable="true" type="tns:ArrayOfResEstimateItem" />
+          <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingBillNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SupplyDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermsCondition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransactionCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TransportMode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type_E_OE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="VehicleNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResEstimateGet" nillable="true" type="tns:ResEstimateGet" />
+  <xs:complexType name="ArrayOfResEstimateItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResEstimateItem" nillable="true" type="tns:ResEstimateItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResEstimateItem" nillable="true" type="tns:ArrayOfResEstimateItem" />
+  <xs:complexType name="ResEstimateItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstimateId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EstimateNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Igst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sgst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Utgst" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResEstimateItem" nillable="true" type="tns:ResEstimateItem" />
+  <xs:complexType name="ResCustomerList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResCommon">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resCustomer" nillable="true" type="tns:ArrayOfResCustomer" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResCustomerList" nillable="true" type="tns:ResCustomerList" />
+  <xs:complexType name="ArrayOfResCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResCustomer" nillable="true" type="tns:ResCustomer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResCustomer" nillable="true" type="tns:ArrayOfResCustomer" />
+  <xs:complexType name="ResCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ShippingAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingPinCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResCustomer" nillable="true" type="tns:ResCustomer" />
 </xs:schema>

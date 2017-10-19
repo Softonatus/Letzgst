@@ -36,7 +36,10 @@ namespace LetzGST.HandlerFiles
                 }
                 else
                 {
-                    context.Response.Write("No Data");
+                    ResCommon timeOut = new ResCommon();
+                    timeOut.ResponseCode = -102;
+                    timeOut.ResponseMessage = "No Response from server";
+                    context.Response.Write(JsonConvert.SerializeObject(timeOut));
                 }
             }
             catch (Exception ex)

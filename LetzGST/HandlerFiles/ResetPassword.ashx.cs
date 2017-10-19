@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
-using System.Web.Script.Serialization;
+using System.Web.SessionState;
 using LetzGST.letzGST_Service;
 using LetzGST.Common;
 
@@ -13,7 +13,7 @@ namespace LetzGST.HandlerFiles
     /// <summary>
     /// Summary description for ResetPassword
     /// </summary>
-    public class ResetPassword : IHttpHandler
+    public class ResetPassword : IHttpHandler, IRequiresSessionState
     {
 
         public void ProcessRequest(HttpContext context)
@@ -26,6 +26,24 @@ namespace LetzGST.HandlerFiles
 
                 ReqUpdatePassword ReqUpdatePwd = new ReqUpdatePassword();
                 ReqUpdatePwd = generateReq.Deserialize<ReqUpdatePassword>(strJson);
+
+                if (Convert.ToString(context.Request.QueryString["type"]) != null)
+                {
+                    if (context.Session["UserDetails"] != null)
+                    {
+                        ResLogin UserDetails = new ResLogin();
+                        if (Convert.ToString(context.Request.QueryString["usertype"]) != null)
+                        {
+                            string sessionName = "company_" + context.Request.QueryString["cmp_id"];
+                            UserDetails = (ResLogin)context.Session[sessionName];
+                        }
+                        else
+                        {
+                            UserDetails = (ResLogin)context.Session["UserDetails"];
+                        }
+                        ReqUpdatePwd.UserId = UserDetails.UserId;
+                    }
+                }
                 string url = generateReq.generateUrl("UpdatePassword");
 
                 ResCommon responseOTP = new ResCommon();

@@ -15,8 +15,10 @@ namespace LetzGST
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //SNServiceClient client = new SNServiceClient();
-            //client.
+            if (Session["UserDetails"] != null)
+            {
+                Session["UserDetails"] = null;
+            }
         }
 
      

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LetzGST.letzGST_Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,11 @@ namespace LetzGST
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserDetails"] == null)
+            {
+                Response.Redirect("~/Index.aspx");
+            }
+            
         }
     }
 }

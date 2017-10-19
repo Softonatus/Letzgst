@@ -1,0 +1,37 @@
+﻿ body {
+            font-family: monospace;
+            font-size: 13px;
+        }
+        
+        p {
+            padding: 0;
+            margin: 5px 0;
+        }
+        
+        .pdftbl {
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+        }
+        
+        .pdftbl th {
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+            height: 30px;
+            background-color: #ddd;
+            padding: 0 4px;
+        }
+        
+        .pdftbl td {
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+            height: 30px;
+        }
+        
+        .pdftbl .footer {
+            font-weight: bold;
+        }

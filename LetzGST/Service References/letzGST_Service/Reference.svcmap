@@ -22,6 +22,8 @@
     <MetadataSource Address="http://letzgst.com/SNService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
+    <MetadataFile FileName="SNService4.xsd" MetadataType="Schema" ID="cdd45346-2e2d-4f35-8253-0fa730a12b6e" SourceId="1" SourceUrl="http://letzgst.com/SNService.svc?xsd=xsd5" />
+    <MetadataFile FileName="SNService41.xsd" MetadataType="Schema" ID="5198495e-b441-49f2-9693-7aa0e95077f4" SourceId="1" SourceUrl="http://letzgst.com/SNService.svc?xsd=xsd4" />
     <MetadataFile FileName="SNService.xsd" MetadataType="Schema" ID="5372b28c-d5c0-4016-bd76-a202020dda68" SourceId="1" SourceUrl="http://letzgst.com/SNService.svc?xsd=xsd1" />
     <MetadataFile FileName="SNService1.xsd" MetadataType="Schema" ID="d07627b6-bf52-47ad-930b-db849eb288b2" SourceId="1" SourceUrl="http://letzgst.com/SNService.svc?xsd=xsd0" />
     <MetadataFile FileName="SNService2.xsd" MetadataType="Schema" ID="8fbfa243-928d-478a-b692-0ddae4a51090" SourceId="1" SourceUrl="http://letzgst.com/SNService.svc?xsd=xsd3" />
