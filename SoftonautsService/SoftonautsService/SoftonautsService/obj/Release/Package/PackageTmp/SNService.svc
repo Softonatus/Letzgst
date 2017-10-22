@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SoftonautsService.SNService" CodeBehind="SNService.svc.cs" %>
