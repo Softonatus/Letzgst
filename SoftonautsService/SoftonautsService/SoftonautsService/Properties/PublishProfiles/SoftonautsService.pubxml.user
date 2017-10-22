@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/08/2017 21:49:51</publishTime>
     </File>
     <File Include="bin/SoftonautsService.dll">
-      <publishTime>10/04/2017 10:24:23</publishTime>
+      <publishTime>10/22/2017 19:48:13</publishTime>
     </File>
     <File Include="DLL/SoftoNautsModel.dll">
       <publishTime>08/08/2017 21:50:59</publishTime>
@@ -64,7 +64,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/08/2017 21:50:21</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/15/2017 00:39:00</publishTime>
+      <publishTime>10/22/2017 19:48:15</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -15,4 +15,3 @@ F:\SourceGitHubRepo\SoftonautsProject_All\SoftonautsService\SoftonautsService\So
 F:\SourceGitHubRepo\SoftonautsProject_All\SoftonautsService\SoftonautsService\SoftonautsService\bin\Newtonsoft.Json.xml
 F:\SourceGitHubRepo\SoftonautsProject_All\SoftonautsService\SoftonautsService\SoftonautsService\obj\Debug\SoftonautsService.dll
 F:\SourceGitHubRepo\SoftonautsProject_All\SoftonautsService\SoftonautsService\SoftonautsService\obj\Debug\SoftonautsService.pdb
-F:\SourceGitHubRepo\SoftonautsProject_All\SoftonautsService\SoftonautsService\SoftonautsService\obj\Debug\SoftonautsService.csprojResolveAssemblyReference.cache
